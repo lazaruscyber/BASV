@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Vision from './components/Vision';
 import Pipeline from './components/Pipeline';
 import Volumes from './components/Volumes';
 import Quality from './components/Quality';
@@ -13,7 +12,6 @@ const App: FC = () => {
       <Header />
       <main>
         <Hero />
-        <Vision />
         <Pipeline />
         <Volumes />
         <Quality />

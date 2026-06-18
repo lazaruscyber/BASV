@@ -13,30 +13,30 @@ interface PipelineStep {
 const pipelineSteps: PipelineStep[] = [
   {
     stage: 'I',
-    title: 'Source Integration',
-    paliTitle: 'Mūlapaṭha',
-    description: 'The Chaṭṭhasaṅgīti (Sixth Council) Pāli text is ingested alongside the epitaka.org Nissaya-aligned English baseline. Both texts are indexed by sutta, paragraph, and sentence identifier for precise parallel alignment.',
+    title: 'Vihara Donation',
+    paliTitle: '-',
+    description: 'Handeling donations to various Viharas and Pagodas in Myanmar (Burma).',
     icon: 'book',
   },
   {
     stage: 'II',
-    title: 'Exegetical Review',
-    paliTitle: 'Aṭṭhakathā-vicāra',
-    description: 'Qualified Myanmar Pāli scholars analyze the baseline translation against the Commentaries (Aṭṭhakathā) and Sub-commentaries (Ṭīkā). Each passage is examined for contextual nuance, doctrinal accuracy, and grammatical fidelity.',
+    title: 'App Development',
+    paliTitle: '-',
+    description: 'Developing Buddhist apps for the ease of use of followers.',
     icon: 'search',
   },
   {
     stage: 'III',
-    title: 'Syntactic Refinement',
-    paliTitle: 'Vākya-yojanā',
-    description: 'Raw translation components are edited into fluent, dignified English prose. The grammatical structures dictated by the Nissaya method are strictly preserved—no interpretive smoothing, no doctrinal paraphrase.',
+    title: 'Pariyatti Publication',
+    paliTitle: '-',
+    description: 'Publishing Buddhist books and literature for the benefit of the Sasana.',
     icon: 'pen',
   },
   {
     stage: 'IV',
-    title: 'Peer Review',
-    paliTitle: 'Paṭisaṅkhāna',
-    description: 'Computational analysis cross-references all doctrinal terms against the controlled glossary. Each term is verified for uniform rendering across the entire corpus prior to final collation.',
+    title: 'Global Missionary',
+    paliTitle: '-',
+    description: 'Bringing the light of the Dhamma to the world through missionary work and Theravada outreach programs.',
     icon: 'shield',
   },
 ];
@@ -64,16 +64,15 @@ const Pipeline: FC = () => {
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-px bg-charcoal-600" />
             <span className="text-xs text-charcoal-400 uppercase tracking-[0.2em]">
-              Methodology
+              What We Do
             </span>
           </div>
 
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight mb-4">
-            Translation Procedure
+            Our Missions
           </h2>
           <p className="text-charcoal-400 text-base max-w-2xl leading-relaxed">
-            The translation proceeds through four sequential stages, each documented
-            and subject to internal review.
+            A quick glance at the four aspects of our everlasting mission.
           </p>
         </motion.div>
 

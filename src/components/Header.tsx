@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Rationale', href: '#vision' },
   { label: 'Methodology', href: '#pipeline' },
   { label: 'Volumes', href: '#volumes' },
   { label: 'Standards', href: '#quality' },

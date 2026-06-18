@@ -74,7 +74,6 @@ const Hero: FC = () => {
         >
           The Pariyatti Mission
           <br />
-          <span className="text-burgundy-900">for the Sasanan</span>
         </motion.h1>
 
         <motion.p
@@ -83,7 +82,6 @@ const Hero: FC = () => {
           transition={{ duration: 1.2, delay: 0.15, ease: 'easeOut' }}
           className="font-serif text-lg md:text-xl text-charcoal-400 italic mb-8"
         >
-          NASV
         </motion.p>
 
         <motion.p
@@ -101,8 +99,6 @@ const Hero: FC = () => {
           transition={{ duration: 1.2, delay: 0.45, ease: 'easeOut' }}
           className="max-w-2xl mx-auto text-base text-charcoal-500 leading-relaxed mb-12 font-light"
         >
-          The digital text is subjected to editorial verification by Myanmar Pāli scholars
-          and compiled into a definitive 7-volume parallel-text print edition.
         </motion.p>
 
         <motion.div
@@ -115,7 +111,7 @@ const Hero: FC = () => {
             href="#pipeline"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-burgundy-900 text-ivory-50 text-sm font-medium rounded-sm hover:bg-burgundy-800 transition-colors duration-200"
           >
-            Translation Methodology
+            Our Mission
             <ArrowRight size={16} />
           </a>
           <a
@@ -123,7 +119,7 @@ const Hero: FC = () => {
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-transparent text-charcoal-700 text-sm font-medium rounded-sm border border-charcoal-300 hover:border-charcoal-400 transition-colors duration-200"
           >
             <BookOpen size={16} />
-            Print Specification
+            View Volumes
           </a>
         </motion.div>
 
