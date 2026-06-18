@@ -72,9 +72,9 @@ const Hero: FC = () => {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-charcoal-950 leading-[1.15] tracking-tight mb-4"
         >
-          The Nissaya Aligned
+          The Pariyatti Mission
           <br />
-          <span className="text-burgundy-900">Standard Version</span>
+          <span className="text-burgundy-900">for the Sasanan</span>
         </motion.h1>
 
         <motion.p
