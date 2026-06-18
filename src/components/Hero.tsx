@@ -92,17 +92,7 @@ const Hero: FC = () => {
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
           className="max-w-3xl mx-auto text-lg md:text-xl text-charcoal-600 leading-relaxed mb-4 font-light"
         >
-          A formal curation and print initiative based on the Nissaya-aligned 
-          digital translation from{' '}
-          <a
-            href="https://epitaka.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-burgundy-800 underline underline-offset-2 decoration-charcoal-300 hover:decoration-burgundy-600 transition-colors"
-          >
-            epitaka.org
-          </a>
-          —produced via computational models trained on traditional Burmese grammatical parsing.
+          The Global Foundation for Pariyatti & Missionary Mission for the Theravāda Sasana.
         </motion.p>
 
         <motion.p
