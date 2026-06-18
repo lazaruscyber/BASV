@@ -24,4 +24,25 @@
   .container-max {
     @apply max-w-7xl mx-auto;
   }
+
+  .btn-download {
+    @apply relative inline-flex items-center gap-2 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-burgundy-800 border border-burgundy-800 overflow-hidden transition-colors duration-300 ease-out;
+  }
+
+  .btn-download::before {
+    content: '';
+    @apply absolute inset-0 bg-burgundy-800;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: -1;
+  }
+
+  .btn-download:hover {
+    @apply text-ivory-50;
+  }
+
+  .btn-download:hover::before {
+    transform: scaleX(1);
+  }
 }

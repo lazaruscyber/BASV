@@ -1,5 +1,8 @@
 import { FC, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { Download } from 'lucide-react';
+
+const PLACEHOLDER_PDF = 'https://example.com/nasv-sample.pdf';
 
 interface VolumeEntry {
   volume: string;
@@ -77,7 +80,8 @@ const Volumes: FC = () => {
               <div className="col-span-1">Vol.</div>
               <div className="col-span-3">Title</div>
               <div className="col-span-2">Subtitle</div>
-              <div className="col-span-6">Description</div>
+              <div className="col-span-4">Description</div>
+              <div className="col-span-2" />
             </div>
             {volumes.map((vol, index) => (
               <motion.div
@@ -85,7 +89,7 @@ const Volumes: FC = () => {
                 initial={{ opacity: 0 }}
                 animate={isInView ? { opacity: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.15 + index * 0.08 }}
-                className="grid grid-cols-12 gap-4 py-5 border-b border-ivory-200 hover:bg-ivory-100/50 transition-colors duration-200"
+                className="grid grid-cols-12 gap-4 py-5 border-b border-ivory-200 hover:bg-ivory-100/50 transition-colors duration-200 items-center"
               >
                 <div className="col-span-1 font-serif text-sm text-burgundy-800 font-medium pt-0.5">
                   {vol.volume}
@@ -96,8 +100,14 @@ const Volumes: FC = () => {
                 <div className="col-span-2 text-sm text-charcoal-500 italic pt-0.5">
                   {vol.subtitle}
                 </div>
-                <div className="col-span-6 text-sm text-charcoal-600 leading-relaxed">
+                <div className="col-span-4 text-sm text-charcoal-600 leading-relaxed">
                   {vol.description}
+                </div>
+                <div className="col-span-2 flex justify-end">
+                  <a href={PLACEHOLDER_PDF} target="_blank" rel="noopener noreferrer" className="btn-download">
+                    <Download size={13} />
+                    Download PDF
+                  </a>
                 </div>
               </motion.div>
             ))}
@@ -119,7 +129,11 @@ const Volumes: FC = () => {
                 <span className="text-xs text-burgundy-800 font-medium">{vol.volume}</span>
               </div>
               <p className="text-xs text-charcoal-500 italic mb-3">{vol.subtitle}</p>
-              <p className="text-sm text-charcoal-600 leading-relaxed">{vol.description}</p>
+              <p className="text-sm text-charcoal-600 leading-relaxed mb-4">{vol.description}</p>
+              <a href={PLACEHOLDER_PDF} target="_blank" rel="noopener noreferrer" className="btn-download">
+                <Download size={13} />
+                Download PDF
+              </a>
             </motion.article>
           ))}
         </div>
